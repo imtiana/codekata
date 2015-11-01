@@ -32,7 +32,12 @@ class Ideone
 		if (a[mid] == n) {
 			return mid;
 		}
-		
-		return a[mid] < n ? binarySearchHelper(a, n, mid + 1, hi) : binarySearchHelper(a, n, lo, mid - 1);
+
+		if (a[mid] < n) {
+			return binarySearchHelper(a, n, mid + 1, hi);
+		}
+		else {
+			return binarySearchHelper(a, n, lo, mid - 1);
+		}
 	}
 }
