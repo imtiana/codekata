@@ -13,15 +13,12 @@ class Ideone
 	public static void main (String[] args) throws java.lang.Exception
 	{
 		int[] test1 = {1, 3, 5, 7};
-		int[] test2 = {1, 3, 5, 7};
 		
 		System.out.println(binarySearch(test1, 1));
 		System.out.println(binarySearch(test1, 3));
 		System.out.println(binarySearch(test1, 5));
 		System.out.println(binarySearch(test1, 7));
 		System.out.println(binarySearch(test1, 2));
-
-//		assertEquals(0, binarySearch(test1, 1));
 	}
 	
 	public static int binarySearch(int[] a, int n) {
